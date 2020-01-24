@@ -4,13 +4,19 @@
 <head>
     <title>Projeto ROV4all</title>
     <meta charset="utf-8" />
+    <link rel="shortcut icon" href="https://oom.arditi.pt/rov4all/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/main.css" />
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
     <script>
         $(function() {
             $("#footer").load("footer.html  #footer");
+        });
+    </script>
+    <script>
+        $(function() {
+            $("#nav").load("nav.html  #nav");
         });
     </script>
 </head>
@@ -22,20 +28,14 @@
         <h1><strong>
             <div style="width: 80px;">
                 <a href="index.html">
-                <img src="images/logo/rov4all_branco.png"  height="80px" alt="Snow">
                 </a>
             </div>
             </strong>
         </h1>
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Consorcio.html">Consórcio</a></li>
-                <li><a href="Sobre.html">Sobre</a></li>
-                <li><a href="Eventos.html">Noticias</a></li>
-                <li><a href="Apoio.html">Recursos</a></li>
-            </ul>
-        </nav>
+        <!--Import NAV-->
+        <div id="nav">
+        </div>
+
     </header>
 
 
@@ -44,7 +44,8 @@
 
     <!-- Banner -->
     <section id="banner">
-        <h2>ROV4all</h2>
+        <h2> <img style="margin-top: 2rem !important" ; src="images/logo/rov4all_branco.png" width="25%" alt="Snow">
+        </h2>
         <p> Construção de robôs submarinos em <br>contexto escolar<br/>
         </p>
         <!--<ul class="actions">
@@ -99,6 +100,7 @@
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

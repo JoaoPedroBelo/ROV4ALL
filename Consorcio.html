@@ -4,6 +4,8 @@
 <head>
     <title>Projeto ROV4all</title>
     <meta charset="utf-8" />
+    <link rel="shortcut icon" href="https://oom.arditi.pt/rov4all/favicon.ico" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -14,45 +16,32 @@
 
         });
     </script>
+    <script>
+        $(function() {
+            $("#nav").load("nav.html  #nav");
+        });
+    </script>
 </head>
 
 <body class="landing">
     <!--Header-->
     <header id="header" class="alt">
-
-        <h1><strong>
-            <div style="width: 80px;">
-                <a href="index.html">
-                <img src="images/logo/rov4all_branco.png"  height="80px" alt="Snow">
-                </a>
-            </div>
-            </strong>
-        </h1>
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Consorcio.html">Consórcio</a></li>
-                <li><a href="Sobre.html">Sobre</a></li>
-                <li><a href="Eventos.html">Noticias</a></li>
-                <li><a href="Apoio.html">Recursos</a></li>
-            </ul>
-        </nav>
+        <!--Import NAV-->
+        <div id="nav">
+        </div>
     </header>
 
 
     <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-
-
     <!-- Banner -->
     <section id="banner">
         <h2>Consórcio</h2>
-        <p>Conheça as entidades envolvidas no projeto</p>
+        <p> Conheça as entidades envolvidas</p>
         <!--<ul class="actions">
-					<li><a href="#" class="button special big">Get Started</a></li>
-				</ul> -->
+                <li><a href="#" class="button special big">Get Started</a></li>
+            </ul> -->
     </section>
-    <!-- One -->
-    <section id="one" class="wrapper style1">
+    <section id="main" class="wrapper">
         <div class="container 75%">
             <header style="text-align: center;" class="major special">
                 <h2>Promotor</h3>
@@ -60,17 +49,22 @@
             <div class="row 200% ">
                 <div class="6u 12u$(medium) ">
                     <header class="major ">
-                        <!--<p>
-                            <div class="image rounded ">
-                                <a href="https://www.oma.pt/ "><img src="images/Logos parceiros/arditi.png " alt=" " height="160 " /></a>
-                            </div>
-                        </p> -->
-                        <br/>
-                        <a href="https://www.arditi.pt/ ">
-                            <h2>Arditi</h2>
-                        </a>
+
+                        <br />
+
+
+                        <h2>
+                            <a href="https://www.arditi.pt/ ">
+
+
+                                <img width="370" src="images/Logos Financiamento/ARDITI_color_transparent_background.png " alt=" " />
+
+                            </a>
+                        </h2>
+
                         <p>(Observatório Oceânico da Madeira)</p>
-                        <br/>
+                        <br />
+
 
                     </header>
                 </div>
@@ -101,7 +95,7 @@
             <div class="feature-grid ">
                 <div class="feature ">
                     <div class="image rounded ">
-                        <a href="http://www.okeanos.uac.pt/ "><img src="images/Logos parceiros/imar.png " alt=" " height="160 " /></a>
+                        <a href="http://www.okeanos.uac.pt/ "><img src="images/Logos parceiros/imar.png " alt=" " /></a>
                     </div>
                     <div class="content ">
                         <header>
@@ -114,7 +108,7 @@
                 </div>
                 <div class="feature ">
                     <div class="image rounded ">
-                        <a href="https://www.oma.pt/ "><img src="images/Logos parceiros/oma.png " alt=" " height="160 " /></a>
+                        <a href="https://www.oma.pt/ "><img src="images/Logos parceiros/oma.png " alt=" " /></a>
                     </div>
                     <div class="content ">
                         <header>
@@ -127,7 +121,7 @@
                 </div>
                 <div class="feature ">
                     <div class="image rounded ">
-                        <a href="http://www.cvtavira.pt/home/ "><img src="images/Logos parceiros/tavira.png " alt=" " height="160 " /></a>
+                        <a href="http://www.cvtavira.pt/home/ "><img src="images/Logos parceiros/tavira.png " alt=" " /></a>
                     </div>
                     <div class="content ">
                         <header>
@@ -140,7 +134,7 @@
                 </div>
                 <div class="feature ">
                     <div class="image rounded ">
-                        <a href="http://www.ipma.pt/pt/index.html/ "><img style="background: white; " src="images/Logos parceiros/ipma.png " alt=" " height="160 " /></a>
+                        <a href="http://www.ipma.pt/pt/index.html/ "><img style="background: white; " src="images/Logos parceiros/ipma.png " alt=" " /></a>
                     </div>
                     <div class="content ">
                         <header>
@@ -153,7 +147,7 @@
                 </div>
                 <div class="feature ">
                     <div class="image rounded ">
-                        <a href="http://welcome.isr.tecnico.ulisboa.pt/ "><img src="images/Logos parceiros/tecnico.png " alt=" " height="160 " /></a>
+                        <a href="http://welcome.isr.tecnico.ulisboa.pt/ "><img src="images/Logos parceiros/tecnico.png " alt=" " /></a>
                     </div>
                     <div class="content ">
                         <header>
@@ -166,7 +160,7 @@
                 </div>
                 <div class="feature ">
                     <div class="image rounded ">
-                        <a href="https://www.madeira.gov.pt/iq/ "><img src="images/Logos parceiros/IQ.png " alt=" " height="160 " /></a>
+                        <a href="https://www.madeira.gov.pt/iq/ "><img src="images/Logos parceiros/IQ.png " alt=" " /></a>
                     </div>
                     <div class="content ">
                         <header>
@@ -187,10 +181,10 @@
         <!-- import from page footer -->
     </div>
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.min.js "></script>
+    <script src="assets/js/skel.min.js "></script>
+    <script src="assets/js/util.js "></script>
+    <script src="assets/js/main.js "></script>
 
 </body>
 
