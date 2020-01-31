@@ -2964,7 +2964,7 @@ body.is-touch .wrapper.style3 {
 #banner {
     padding: 16em 0 13em 0;
     background-attachment: fixed;
-    background-image: url("images/overlay.png"), url("../../images/banner-Desktop.jpg");
+    background-image: url("images/overlay.png"), url("../../images/banner.jpg");
     background-position: center top;
     background-size: cover;
     line-height: 1.75;
@@ -2991,7 +2991,7 @@ body.is-touch .wrapper.style3 {
 
 @media screen and (max-width: 1280px) {
     #banner {
-        background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+        /* background-image: url("images/overlay.png"), url("../../images/banner.jpg");*/
         padding: 14em 0 11em 0;
     }
     #banner h2 {
@@ -3001,14 +3001,14 @@ body.is-touch .wrapper.style3 {
 
 @media screen and (max-width: 980px) {
     #banner {
-        background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+        /* background-image: url("images/overlay.png"), url("../../images/banner.jpg");*/
         padding: 9em 0 7em 0;
     }
 }
 
 @media screen and (max-width: 736px) {
     #banner {
-        background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+        /* background-image: url("images/overlay.png"), url("../../images/banner.jpg");*/
         padding: 6em 2em 6em 2em;
     }
     #banner h2 {
@@ -3021,7 +3021,7 @@ body.is-touch .wrapper.style3 {
 
 @media screen and (max-width: 480px) {
     #banner {
-        background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+        /* background-image: url("images/overlay.png"), url("../../images/banner.jpg");*/
         background-size: 200%;
         padding: 4em 2em 4em 2em;
     }
