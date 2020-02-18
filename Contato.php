@@ -66,7 +66,7 @@ if(isset($_POST['submit']))
         $DisplayFormERROR=true;
     } else {
         $DisplayForm=false;
-        $to = "joao.belo@oom.arditi.pt";
+        $to = "sonia.costa@oom.arditi.pt";
         $subject = "ROV4ALL ".$_POST['assunto'];
         
         $message = "<html>

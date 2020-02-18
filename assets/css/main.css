@@ -1570,12 +1570,12 @@ textarea {
 }
 
 a {
-    text-decoration: underline;
+    text-decoration: none;
     color: #f32853;
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 strong,

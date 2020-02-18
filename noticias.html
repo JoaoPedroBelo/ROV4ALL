@@ -11,13 +11,67 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script>
-        $(function() {
+        $(function () {
+            $("#footer").load("footer.html  #footer");
+        });
+    </script>
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .content {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+        .collapsible {
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .collapsible:hover {
+            background-color: #FAFAFA;
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            font-weight: bold;
+            float: left;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+    </script>
+    <script>
+        $(function () {
             $("#footer").load("footer.html  #footer");
 
         });
     </script>
     <script>
-        $(function() {
+        $(function () {
             $("#nav").load("nav.html  #nav");
         });
     </script>
@@ -39,7 +93,7 @@
     <!-- Banner -->
     <section id="banner">
         <h2 style="margin-top: 3rem !important">Notícias</h2>
-        <p> Em construção</p>
+        <p> Acompanhe as novidades</p>
         <!--<ul class="actions">
 					<li><a href="#" class="button special big">Get Started</a></li>
 				</ul> -->
@@ -47,9 +101,69 @@
     <!-- Main -->
     <section id="main" class="wrapper">
         <div class="container">
-            <p align="justify">
-                ....
-            </p>
+
+            <!-- Noticia 1-->
+            <section id="Noticia 1">
+                <h3 class="collapsible" style="color:#f32853;"><a onclick="return false;" href="#"> ROV4ALL: reunião de
+                        arranque</a></h3>
+                <div class="content">
+                    <p align="justify">
+                        <strong> Data: </strong> 23.01.2020
+                        <br>
+                        <strong>Promotor:</strong> ARDITI/OOM
+                        <br>
+                        <strong>Parceiros:</strong> Instituto do Mar, Observatório do Mar dos Açores, Centro de Ciência
+                        Viva de Tavira,Instituto Superior
+                        Técnico/Instituto de Sistemas e Robótica (IST/IRS),Instituto para a Qualificação/Escola
+                        Profissional Francisco Fernandes (IQ, IPRAM/EPFF), Instituto Português do Mar e da Atmosfera, I.
+                        P.
+                    </p>
+                    <p align="justify">
+                        alguma descrição
+                    </p>
+                    <p align="justify">
+                        <figure>
+                            <div class="row">
+                                <div class="column">
+                                    <a target="_blank" href="images/arranque/canical.jpg">
+                                        <img src="images/arranque/canical.jpg" alt="Snow" style="width:100%;">
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <a target="_blank" href="images/arranque/grupo.jpg">
+                                        <img src="images/arranque/grupo.jpg" alt="Forest" style="width:100%">
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <a target="_blank" href="images/arranque/ROV.jpg">
+                                        <img src="images/arranque/ROV.jpg" alt="Mountains" style="width:100%">
+                                    </a>
+                                </div>
+                            </div>
+                            <figcaption style="text-align: center"></figcaption>
+                            reunião de
+                            arranque
+                            </figcaption>
+                        </figure>
+                    </p>
+                    <p align="justify">
+
+                    </p>
+                    <p align="justify">
+
+                    </p>
+                    <p align="justify">
+
+                    </p>
+                    <p align="justify">
+
+
+                    </p>
+                    <p align="justify">
+
+                    </p>
+                </div>
+            </section>
 
         </div>
     </section>
@@ -62,6 +176,23 @@
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <!-- For the Collapsible  -->
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 
 </body>
 
