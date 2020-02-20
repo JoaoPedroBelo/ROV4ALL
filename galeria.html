@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/galeria.css" />
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
 
 
 </head>
@@ -32,86 +31,31 @@
 					<li><a href="#" class="button special big">Get Started</a></li>
 				</ul> -->
     </section>
-
-
-    <div class="gallery" id="gallery">
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,care" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,studied" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,substance" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,choose" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,past" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,lamp" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,yet" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,eight" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,crew" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,event" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,instrument" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,practical" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,pass" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,bigger" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,number" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,feature" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,line" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,railroad" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,pride" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,too" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,bottle" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,base" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,cell" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,bag" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="https://source.unsplash.com/random/?tech,card" alt=""></div>
-        </div>
-    </div>
-
+    <section id="main" class="wrapper">
+        <div class="gg-container">
+            <div class="gg-box">
+              <img src="images/galeria/IMG_0146.jpg">
+              <img src="images/galeria/IMG_0179.jpg">
+              <img src="images/galeria/IMG_0180.jpg">
+              <img src="images/galeria/IMG_181.jpg">
+              <img src="images/galeria/IMG_182.jpg">
+              <img src="images/galeria/IMG_183.jpg">
+              <img src="images/galeria/IMG_7695.jpg">
+              <img src="images/galeria/IMG_7704.jpg">
+              <img src="images/galeria/IMG_7752.jpg">
+              <img src="images/galeria/IMG_7803.jpg">
+              <img src="images/galeria/IMG_7872.jpg">
+              <img src="images/galeria/P1020436.jpg">
+              <img src="images/galeria/IMG_9710.jpg">
+              <img src="images/galeria/IMG_9718.jpg">
+              <img src="images/galeria/IMG_9723.jpg">
+              <img src="images/galeria/IMG_9743.jpg">
+              <img src="images/galeria/IMG_9762.jpg">
+              <img src="images/galeria/P1020471.jpg">
+            </div>
+          </div>
+    </section>
+   
 
     <!-- Footer -->
     <div id="footer">
@@ -123,41 +67,10 @@
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        var gallery = document.querySelector('#gallery');
-        var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
-        var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
-        var resizeAll = function () {
-            var altura = getVal(gallery, 'grid-auto-rows');
-            var gap = getVal(gallery, 'grid-row-gap');
-            gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-                var el = item;
-                el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
-            });
-        };
-        gallery.querySelectorAll('img').forEach(function (item) {
-            item.classList.add('byebye');
-            if (item.complete) {
-                console.log(item.src);
-            }
-            else {
-                item.addEventListener('load', function () {
-                    var altura = getVal(gallery, 'grid-auto-rows');
-                    var gap = getVal(gallery, 'grid-row-gap');
-                    var gitem = item.parentElement.parentElement;
-                    gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-                    item.classList.remove('byebye');
-                });
-            }
-        });
-        window.addEventListener('resize', resizeAll);
-        gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-            item.addEventListener('click', function () {
-                item.classList.toggle('full');
-            });
-        });
+    <script type="text/javascript" src="assets/js/galeria.js"></script>
+<script>
 
-    </script>
+</script>
     <script>
         $(function () {
             $("#footer").load("footer.html  #footer");
