@@ -123,7 +123,7 @@ if(isset($_POST['submit']))
                     <textarea name="messagem" rows="10" cols="30" oninput="setCustomValidity('')"  oninvalid="this.setCustomValidity('Insira o sua mensagem')" required=""></textarea>
                     <p>Verificação de segurança:</p>
                     <div class="g-recaptcha" data-sitekey="6LeKk9QUAAAAACB1gAxG9pp2k8RW7x3LVGqu9YrJ"></div>
-                    <input type="submit" value="Submeter" name="submit"/>
+                    <input type="submit" class="button special big" value="Submeter" name="submit"/>
                 </form>
             <?php }?>
             <?php 
