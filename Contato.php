@@ -2,9 +2,9 @@
 <html>
 
 <head>
-    <title>Projeto ROV4all</title>
+    <title>Projeto ROV4ALL</title>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="https://oom.arditi.pt/rov4all/favicon.ico" />
+    <link rel="shortcut icon" href="https://oom.arditi.pt/ROV4ALL/favicon.ico" />
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -71,12 +71,12 @@ if(isset($_POST['submit']))
         
         $message = "<html>
         <head>
-        <title>Pedido de Contato ROV4ALL</title>
+        <title>Pedido de Contacto ROV4ALL</title>
         </head>
         <body>
         <p>Nome: ".$_POST['name']. "</p>
         <p>Email: ".$_POST['email']. "</p>
-        <p>Contato: ".$_POST['contato']. "</p>
+        <p>Contacto: ".$_POST['contacto']. "</p>
         <p>Assunto: ".$_POST['assunto']."</p>
         <p>Mensagem: ".$_POST['messagem']. "</p>
         </body>
@@ -98,7 +98,7 @@ if(isset($_POST['submit']))
     <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
     <!-- Banner -->
     <section id="banner">
-        <h2 style="margin-top: 3rem !important">Contato</h2>
+        <h2 style="margin-top: 3rem !important">Contacto</h2>
         <p> Esclareça as dúvidas</p>
         <!--<ul class="actions">
 					<li><a href="#" class="button special big">Get Started</a></li>
@@ -110,37 +110,39 @@ if(isset($_POST['submit']))
             <p align="justify">
             <?php 
             if($DisplayForm){ ?>
-                <form action="Contato.php" id="contact_form" method="POST">
-                    <p>Nome:</p>
+                <form action="Contacto.php" id="contact_form" method="POST">
+                     Nome:
                     <input type="text" name="name" placeholder="Insira o seu nome" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Insira o seu nome')" required/>
-                    <p>Email:</p>
+                    Email:
                     <input type="email" name="email" placeholder="Insira o seu email" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Insira o seu email')" required/>
-                    <p>Contato:</p>
-                    <input type="text" name="contato" pattern="[0-9]+$" placeholder="Insira o seu contato" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Insira o seu contato')" required/>
-                    <p>Assunto:</p>
-                    <input type="text" name="assunto" placeholder="Insira o assunto do contato" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Insira o assunto do contato')" required/>
-                    <p>Mensagem:</p>
+                    Contacto:
+                    <input type="text" name="contacto" pattern="[0-9]+$" placeholder="Insira o seu contacto" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Insira o seu contacto')" required/>
+                    Assunto:
+                    <input type="text" name="assunto" placeholder="Insira o assunto do contacto" oninput="setCustomValidity('')" oninvalid="this.setCustomValidity('Insira o assunto do contacto')" required/>
+                    Mensagem:
                     <textarea name="messagem" rows="10" cols="30" oninput="setCustomValidity('')"  oninvalid="this.setCustomValidity('Insira o sua mensagem')" required=""></textarea>
-                    <p>Verificação de segurança:</p>
+                    Verificação de segurança:
                     <div class="g-recaptcha" data-sitekey="6LeKk9QUAAAAACB1gAxG9pp2k8RW7x3LVGqu9YrJ"></div>
+                    <p style="padding-top: 15px;">
                     <input type="submit" class="button special big" value="Submeter" name="submit"/>
+                    </p>
                 </form>
             <?php }?>
             <?php 
             if($DisplayForm==false){ ?>
-                    <p>Recebemos o seu contato, iremos ser breves</p>
+                    <p>Recebemos o seu contacto, iremos ser breves</p>
                     
                 </form>
                 
                 <?php }?>
                 <?php 
             if($DisplayFormERROR==true){ ?>
-                    <p>valide a opção de segurança, é importante para nos.</p>
+                    <p style > valide a opção de segurança, é importante para nos.</p>
                     
                 </form>
                 
                 <?php }?>
-            </p>
+            </>
 
         </div>
     </section>
