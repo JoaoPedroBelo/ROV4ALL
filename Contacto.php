@@ -142,8 +142,6 @@ if(isset($_POST['submit']))
                 </form>
                 
                 <?php }?>
-            </>
-
         </div>
     </section>
 
