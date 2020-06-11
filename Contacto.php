@@ -4,7 +4,7 @@
 <head>
     <title>Projeto ROV4ALL</title>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" href="https://oom.arditi.pt/ROV4ALL/favicon.ico" />
+    <link rel="shortcut icon" href="https://oom.arditi.pt/rov4all/favicon.ico" />
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
