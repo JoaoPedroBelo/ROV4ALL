@@ -1591,6 +1591,7 @@ i {
 
 p {
     margin: 0 0 2em 0;
+    
 }
 
 h1,
@@ -2322,7 +2323,7 @@ ol li {
 ul {
     list-style: disc;
     margin: 0 0 2em 0;
-    padding-left: 1em;
+    padding-left: 3em;
 }
 
 ul li {
