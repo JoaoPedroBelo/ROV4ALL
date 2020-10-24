@@ -66,7 +66,7 @@ if(isset($_POST['submit']))
         $DisplayFormERROR=true;
     } else {
         $DisplayForm=false;
-        $to = "sonia.costa@oom.arditi.pt";
+        $to = "rov4all@gmail.com";
         $subject = "ROV4ALL ".$_POST['assunto'];
         
         $message = "<html>
@@ -85,7 +85,7 @@ if(isset($_POST['submit']))
         // Always set content-type when sending HTML email
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        
+        $headers .= 'Cc: sonia.costa@oom.arditi.pt' . "\r\n";
         
         mail($to,$subject,$message,$headers);
     }
