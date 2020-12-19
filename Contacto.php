@@ -98,7 +98,7 @@ if(isset($_POST['submit']))
     <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
     <!-- Banner -->
     <section id="banner">
-        <h2 style="margin-top: 3rem !important">Contacto</h2>
+        <h2 style="margin-top: 5rem !important">Contacto</h2>
         <p> Esclareça as dúvidas</p>
         <!--<ul class="actions">
 					<li><a href="#" class="button special big">Get Started</a></li>
